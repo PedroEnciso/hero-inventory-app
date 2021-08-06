@@ -72,10 +72,10 @@ heroNumbers.forEach((hero) => {
         name: data.name,
         identity: data["biography"]["full-name"],
         alignment: data.biography.alignment,
+        image: data.image.url,
       };
 
       const newHero = new Hero(herodetail);
-      console.log(newHero);
 
       newHero.save((error) => {
         if (error) {

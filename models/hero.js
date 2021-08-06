@@ -11,6 +11,7 @@ const HeroSchema = new Schema({
     enum: ["good", "bad", "neutral"],
     default: "good",
   },
+  image: { type: String, required: false },
 });
 
 // virtual for hero's url
