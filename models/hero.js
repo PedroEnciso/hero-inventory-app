@@ -4,11 +4,11 @@ const Schema = mongoose.Schema;
 
 const HeroSchema = new Schema({
   name: { type: String, required: true, maxLength: 100 },
-  identity: { type: String, required: true, maxLength: 100 },
+  identity: { type: String, required: false, maxLength: 100 },
   alignment: {
     type: String,
     required: true,
-    enum: ["good", "bad"],
+    enum: ["good", "bad", "neutral"],
     default: "good",
   },
 });
