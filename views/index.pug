@@ -1,11 +1,18 @@
 extends layout
 
 block content
-  h1= title
-  
-  div
-    each hero in hero_list
-      div
-        h2 #{hero.name}
-        p #{hero.identity}
-        p #{hero.alignment}
+  div(class='container')
+    div(class='header')
+      h1= title
+      a(href='heroes/add_hero') + Add a Hero
+    
+    div(class='hero-grid')
+      each hero in hero_list
+        div(class=`hero-card ${hero.alignment}`)
+          img(src=`${hero.image}` loading='lazy')
+          h2 #{hero.name}
+          if hero.identity==''
+            p No Identity
+          else
+            p #{hero.identity}
+          
