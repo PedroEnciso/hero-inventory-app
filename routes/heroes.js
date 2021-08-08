@@ -1,9 +1,8 @@
-let express = require("express");
-let router = express.Router();
+const express = require("express");
+const router = express.Router();
+const hero_controller = require("../controllers/heroController");
 
 // GET heros home page
-router.get("/", (req, res) => {
-  res.render("index", { title: "Hero Inventory" });
-});
+router.get("/", hero_controller.index);
 
 module.exports = router;

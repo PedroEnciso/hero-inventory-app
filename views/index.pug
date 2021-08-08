@@ -2,4 +2,10 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  
+  div
+    each hero in hero_list
+      div
+        h2 #{hero.name}
+        p #{hero.identity}
+        p #{hero.alignment}
