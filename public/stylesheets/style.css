@@ -72,6 +72,18 @@ a {
   border-radius: 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
           box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  -webkit-transition: -webkit-box-shadow, -webkit-transform 0.4s;
+  transition: -webkit-box-shadow, -webkit-transform 0.4s;
+  transition: box-shadow, transform 0.4s;
+  transition: box-shadow, transform 0.4s, -webkit-box-shadow, -webkit-transform 0.4s;
+  cursor: pointer;
+}
+
+.container .hero-grid .hero-card:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .container .hero-grid .hero-card img {
