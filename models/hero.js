@@ -12,6 +12,9 @@ const HeroSchema = new Schema({
     default: "good",
   },
   image: { type: String, required: false },
+  powerstats: { type: Object, required: false },
+  publisher: { type: String, required: false },
+  first_appearence: { type: String, required: false },
 });
 
 // virtual for hero's url
