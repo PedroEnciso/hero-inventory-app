@@ -1,0 +1,15 @@
+.footer {
+  padding: 100px 0px 50px;
+  color: white;
+  text-align: center;
+
+  p {
+    line-height: 1.75rem;
+  }
+
+  a {
+    background: -webkit-linear-gradient(right, #1fcfc3, #1f91cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
