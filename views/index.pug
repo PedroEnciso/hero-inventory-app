@@ -4,15 +4,16 @@ block content
   div(class='container')
     div(class='header')
       h1= title
-      a(href='heroes/add_hero') + Add a Hero
+      a.link(href='heroes/add_hero') + Add a Hero
     
     div(class='hero-grid')
       each hero in hero_list
-        div(class=`hero-card ${hero.alignment}`)
-          img(src=`${hero.image}` loading='lazy')
-          h2 #{hero.name}
-          if hero.identity==''
-            p No Identity
-          else
-            p #{hero.identity}
-          
+        a.card-link(href=`heroes/${hero._id}`)
+          div(class=`hero-card ${hero.alignment}`)
+            img(src=`${hero.image}` loading='lazy')
+            h2 #{hero.name}
+            if hero.identity==''
+              p No Identity
+            else
+              p #{hero.identity}
+            

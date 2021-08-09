@@ -9,29 +9,10 @@
 }
 
 .footer a {
+  font-size: 1.05rem;
   background: -webkit-linear-gradient(right, #1fcfc3, #1f91cf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #141414;
-  color: #141414;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.05rem;
 }
 
 .container {
@@ -80,7 +61,12 @@ a {
   row-gap: 3rem;
 }
 
-.container .hero-grid .hero-card {
+.container .hero-grid .card-link {
+  color: #141414;
+  text-decoration: none;
+}
+
+.container .hero-grid .card-link .hero-card {
   width: 100%;
   max-width: 225px;
   height: 100%;
@@ -95,38 +81,41 @@ a {
   cursor: pointer;
 }
 
-.container .hero-grid .hero-card:hover {
+.container .hero-grid .card-link .hero-card:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
 
-.container .hero-grid .hero-card img {
+.container .hero-grid .card-link .hero-card img {
   display: block;
   width: 90%;
   margin: 0 auto;
   border-radius: 5px;
 }
 
-.container .hero-grid .hero-card h2 {
+.container .hero-grid .card-link .hero-card h2 {
+  color: #141414;
   text-align: center;
   padding: 0.75rem 0rem 0.5rem;
+  font-size: 1.5rem;
 }
 
-.container .hero-grid .hero-card p {
+.container .hero-grid .card-link .hero-card p {
   text-align: center;
+  font-size: 1rem;
 }
 
-.container .hero-grid .good {
+.container .hero-grid .card-link .good {
   background: linear-gradient(132deg, #1fcfc3, #1f91cf);
 }
 
-.container .hero-grid .bad {
+.container .hero-grid .card-link .bad {
   background: linear-gradient(132deg, #ffd500, #ff0000);
 }
 
-.container .hero-grid .neutral {
+.container .hero-grid .card-link .neutral {
   background: linear-gradient(132deg, #dddddd 0%, #6e88a1 100%);
 }
 
@@ -135,5 +124,99 @@ a {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+.hero-detail-container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  color: white;
+}
+
+.hero-detail-container .hero-detail-grid {
+  padding-top: 75px;
+  padding-bottom: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.hero-detail-container .hero-detail-grid .image-container {
+  width: 70%;
+  place-self: center;
+}
+
+.hero-detail-container .hero-detail-grid .image-container img {
+  width: 100%;
+}
+
+.hero-detail-container .hero-detail-grid .hero-name-container {
+  width: 100%;
+}
+
+.hero-detail-container .hero-detail-grid .hero-name-container h1 {
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+
+.hero-detail-container .hero-detail-grid .hero-name-container .good {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(right, #1fcfc3, #1f91cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-detail-container .hero-detail-grid .hero-name-container .bad {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(right, #ffd500, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-detail-container .hero-detail-grid .hero-name-container .neutral {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(right, #dddddd 0%, #6e88a1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-detail-container .hero-detail-grid .hero-name-container p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  color: #959599;
+}
+
+.hero-detail-container .hero-detail-grid .hero-name-container p .hero-info {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  padding-left: 10px;
+  color: white;
+}
+
+.hero-detail-container .hero-detail-grid .hero-name-container .powerstats {
+  padding-top: 20px;
+  color: #959599;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #141414;
+  color: #141414;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.05rem;
 }
 /*# sourceMappingURL=style.css.map */

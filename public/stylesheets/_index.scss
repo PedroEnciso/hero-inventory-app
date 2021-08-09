@@ -1,3 +1,7 @@
+$box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+$box-shadow-hover: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+  rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -32,50 +36,58 @@
     place-items: center;
     row-gap: 3rem;
 
-    .hero-card {
-      width: 100%;
-      max-width: 225px;
-      height: 100%;
-      padding: 1.75rem 1.5rem;
-      border-radius: 10px;
-      box-shadow: $box-shadow;
-      transition: box-shadow, transform 0.4s;
-      cursor: pointer;
-      &:hover {
-        box-shadow: $box-shadow-hover;
-        transform: scale(1.03);
+    .card-link {
+      color: #141414;
+      text-decoration: none;
+
+      .hero-card {
+        width: 100%;
+        max-width: 225px;
+        height: 100%;
+        padding: 1.75rem 1.5rem;
+        border-radius: 10px;
+        box-shadow: $box-shadow;
+        transition: box-shadow, transform 0.4s;
+        cursor: pointer;
+        &:hover {
+          box-shadow: $box-shadow-hover;
+          transform: scale(1.03);
+        }
+
+        img {
+          display: block;
+          width: 90%;
+          margin: 0 auto;
+          border-radius: 5px;
+        }
+
+        h2 {
+          color: #141414;
+          text-align: center;
+          padding: 0.75rem 0rem 0.5rem;
+          font-size: 1.5rem;
+        }
+        p {
+          text-align: center;
+          font-size: 1rem;
+        }
       }
 
-      img {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-        border-radius: 5px;
+      .good {
+        background: linear-gradient(132deg, #1fcfc3, #1f91cf);
       }
 
-      h2 {
-        text-align: center;
-        padding: 0.75rem 0rem 0.5rem;
+      .bad {
+        background: linear-gradient(132deg, #ffd500, #ff0000);
       }
-      p {
-        text-align: center;
+
+      .neutral {
+        background: linear-gradient(
+          132deg,
+          rgb(221, 221, 221) 0%,
+          rgb(110, 136, 161) 100%
+        );
       }
-    }
-
-    .good {
-      background: linear-gradient(132deg, #1fcfc3, #1f91cf);
-    }
-
-    .bad {
-      background: linear-gradient(132deg, #ffd500, #ff0000);
-    }
-
-    .neutral {
-      background: linear-gradient(
-        132deg,
-        rgb(221, 221, 221) 0%,
-        rgb(110, 136, 161) 100%
-      );
     }
   }
 }

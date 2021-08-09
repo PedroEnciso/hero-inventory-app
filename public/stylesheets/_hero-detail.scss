@@ -1,0 +1,75 @@
+.hero-detail-container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+  color: white;
+
+  .hero-detail-grid {
+    padding-top: 75px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .image-container {
+      width: 70%;
+      place-self: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .hero-name-container {
+      width: 100%;
+
+      h1 {
+        padding-bottom: 20px;
+        font-weight: 300;
+      }
+
+      .good {
+        font-size: 3rem;
+        background: -webkit-linear-gradient(right, #1fcfc3, #1f91cf);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .bad {
+        font-size: 3rem;
+        background: -webkit-linear-gradient(right, #ffd500, #ff0000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .neutral {
+        font-size: 3rem;
+        background: -webkit-linear-gradient(
+          right,
+          rgb(221, 221, 221) 0%,
+          rgb(110, 136, 161) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 2rem;
+        color: #959599;
+
+        .hero-info {
+          font-size: 1.3rem;
+          text-transform: capitalize;
+          padding-left: 10px;
+          color: white;
+        }
+      }
+
+      .powerstats {
+        padding-top: 20px;
+        color: #959599;
+      }
+    }
+  }
+}

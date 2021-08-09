@@ -16,7 +16,7 @@ const HeroSchema = new Schema({
 
 // virtual for hero's url
 HeroSchema.virtual("url").get(function () {
-  return "/hero/" + this.name;
+  return "/hero/" + this._id;
 });
 
 module.exports = mongoose.model("Hero", HeroSchema);

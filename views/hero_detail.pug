@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    div.hero-detail-container
+        div.hero-detail-grid
+            div.image-container
+                img(src=`${hero.image}`)
+            div.hero-name-container
+                h1(class=`${hero.alignment}`) #{title}
+                p Real identity: #[span.hero-info #{hero.identity}]
+                p Alignment: #[span.hero-info #{hero.alignment}]
+
+                h2.powerstats Power Stats
