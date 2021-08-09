@@ -73,6 +73,9 @@ heroNumbers.forEach((hero) => {
         identity: data["biography"]["full-name"],
         alignment: data.biography.alignment,
         image: data.image.url,
+        publisher: data.biography.publisher,
+        first_appearence: data.biography["first-appearence"],
+        powerstats: data.powerstats,
       };
 
       const newHero = new Hero(herodetail);
