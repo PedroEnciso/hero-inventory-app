@@ -74,7 +74,7 @@ heroNumbers.forEach((hero) => {
         alignment: data.biography.alignment,
         image: data.image.url,
         publisher: data.biography.publisher,
-        first_appearence: data["biography"]["first-appearence"],
+        first_appearence: data["biography"]["first-appearance"],
         powerstats: data.powerstats,
       };
 
