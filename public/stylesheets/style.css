@@ -226,23 +226,19 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 35px auto 0px;
+  font-weight: 600;
+  font-size: 1.1rem;
   color: white;
   text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 300;
   padding: 0.5rem 0.75rem;
-  margin: 35px auto 0px;
-  border: 1px solid white;
-  -webkit-transition: background-color 0.4s, -webkit-transform;
-  transition: background-color 0.4s, -webkit-transform;
-  transition: transform, background-color 0.4s;
-  transition: transform, background-color 0.4s, -webkit-transform;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
 }
 
 .hero-detail-container a:hover {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  background-color: #202020;
+  background-color: #2c2c34;
 }
 
 * {
