@@ -3,10 +3,9 @@
   margin: 0 auto;
   max-width: 1200px;
   color: white;
+  padding-top: 75px;
 
   .hero-detail-grid {
-    padding-top: 75px;
-    padding-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -23,7 +22,6 @@
       width: 100%;
 
       h1 {
-        padding-bottom: 20px;
         font-weight: 300;
       }
 
@@ -66,10 +64,47 @@
         }
       }
 
-      .powerstats {
-        padding-top: 20px;
+      .publisher {
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        color: white;
+        padding-bottom: 20px;
+      }
+
+      .powerstats-title {
+        padding-top: 30px;
         color: #959599;
       }
+
+      hr {
+        width: 75%;
+        background-color: #959599;
+        border: none;
+        height: 1px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .powerstats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+  a {
+    display: block;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 0.5rem 0.75rem;
+    margin: 35px auto 0px;
+    border: 1px solid white;
+    transition: transform, background-color 0.4s;
+    &:hover {
+      transform: translateY(-3px);
+      background-color: rgb(32, 32, 32);
     }
   }
 }

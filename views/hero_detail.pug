@@ -7,7 +7,23 @@ block content
                 img(src=`${hero.image}`)
             div.hero-name-container
                 h1(class=`${hero.alignment}`) #{title}
+                p.publisher #{hero.publisher}
                 p Real identity: #[span.hero-info #{hero.identity}]
                 p Alignment: #[span.hero-info #{hero.alignment}]
+                p First Appearance: #[span.hero-info #{hero.first_appearance}]
 
-                h2.powerstats Power Stats
+
+                h2.powerstats-title Power Stats
+                hr
+                div.powerstats
+                    div.stat-1-3
+                        p Intelligence: #[span.hero-info #{hero.powerstats.intelligence}]
+                        p Strength: #[span.hero-info #{hero.powerstats.strength}]
+                        p Speed: #[span.hero-info #{hero.powerstats.speed}]
+                    div.stat-4-6
+                        p Durability: #[span.hero-info #{hero.powerstats.durability}]
+                        p Power: #[span.hero-info #{hero.powerstats.power}]
+                        p Combat: #[span.hero-info #{hero.powerstats.combat}]
+        a(href='/heroes') Back to Heroes 
+
+                

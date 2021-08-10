@@ -131,11 +131,10 @@
   margin: 0 auto;
   max-width: 1200px;
   color: white;
+  padding-top: 75px;
 }
 
 .hero-detail-container .hero-detail-grid {
-  padding-top: 75px;
-  padding-bottom: 50px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -156,7 +155,6 @@
 }
 
 .hero-detail-container .hero-detail-grid .hero-name-container h1 {
-  padding-bottom: 20px;
   font-weight: 300;
 }
 
@@ -195,9 +193,56 @@
   color: white;
 }
 
-.hero-detail-container .hero-detail-grid .hero-name-container .powerstats {
-  padding-top: 20px;
+.hero-detail-container .hero-detail-grid .hero-name-container .publisher {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.hero-detail-container .hero-detail-grid .hero-name-container .powerstats-title {
+  padding-top: 30px;
   color: #959599;
+}
+
+.hero-detail-container .hero-detail-grid .hero-name-container hr {
+  width: 75%;
+  background-color: #959599;
+  border: none;
+  height: 1px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.hero-detail-container .hero-detail-grid .hero-name-container .powerstats {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.hero-detail-container a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding: 0.5rem 0.75rem;
+  margin: 35px auto 0px;
+  border: 1px solid white;
+  -webkit-transition: background-color 0.4s, -webkit-transform;
+  transition: background-color 0.4s, -webkit-transform;
+  transition: transform, background-color 0.4s;
+  transition: transform, background-color 0.4s, -webkit-transform;
+}
+
+.hero-detail-container a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  background-color: #202020;
 }
 
 * {
