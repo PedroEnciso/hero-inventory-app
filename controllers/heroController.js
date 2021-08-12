@@ -37,6 +37,7 @@ exports.hero_detail = function (req, res, next) {
   );
 };
 
+// display form to add a new hero
 exports.add_hero = function (req, res) {
   res.render("add_hero", { title: "Create a New Hero" });
 };

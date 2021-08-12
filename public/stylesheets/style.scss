@@ -1,11 +1,16 @@
 @import "footer";
 @import "index";
 @import "hero-detail";
+@import "add_hero";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  color: white;
 }
 
 body {
