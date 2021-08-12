@@ -10,6 +10,23 @@
     color: white;
   }
 
+  button {
+    display: block;
+    margin: 1.5rem auto 0rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background: linear-gradient(132deg, #1fcfc3, #1f91cf);
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    transition: transform 0.4s, box-shadow 0.4s;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: $box-shadow-hover;
+    }
+  }
+
   .hero-form {
     border-radius: 10px;
     box-shadow: $box-shadow;
