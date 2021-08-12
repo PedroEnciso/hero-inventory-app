@@ -313,7 +313,7 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1rem;
+  grid-column-gap: 2rem;
   grid-row-gap: 1rem;
   margin: 1rem auto;
 }
@@ -335,8 +335,32 @@
           justify-content: space-between;
 }
 
+.add-hero-container .hero-form .powerstat-field .powerstat label {
+  text-transform: capitalize;
+}
+
 .add-hero-container .hero-form .powerstat-field .powerstat input {
   width: 50px;
+}
+
+.add-hero-container a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 35px auto 0px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+.add-hero-container a:hover {
+  background-color: #2c2c34;
 }
 
 * {
