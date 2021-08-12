@@ -12,7 +12,7 @@ const HeroSchema = new Schema({
     default: "good",
   },
   image: { type: String, required: false },
-  powerstats: { type: Object, required: false },
+  powerstats: { type: Object, required: true },
   publisher: { type: String, required: false },
   first_appearence: { type: String, required: false },
 });
