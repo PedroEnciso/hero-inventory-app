@@ -11,7 +11,7 @@ block content
 
             div.form-field
                 label(for='hero_identity') Secret Identity:
-                input#hero_identity(type=text placeholder='Secret identity' name='hero_identity' required='true' value=(undefined===hero ? '' : hero.identity))
+                input#hero_identity(type=text placeholder='Secret identity' name='hero_identity' value=(undefined===hero ? '' : hero.identity))
 
             div.form-field
                 label(for='alignment') Alignment:
@@ -49,11 +49,11 @@ block content
 
             div.form-field
                 label(for='publisher') Publisher/Creator:
-                input#publisher(type=text placeholder='Publisher/creator' name='publisher' required='true' value=(undefined===hero ? '' : hero.publisher))
+                input#publisher(type=text placeholder='Publisher/creator' name='publisher' value=(undefined===hero ? '' : hero.publisher))
 
             div.form-field
                 label(for='first_appearance') First Appearance in Comics:
-                input#first_appearance(type=text placeholder='Issue of first appearance' name='first_appearance' required='true' value=(undefined===hero ? '' : hero.first_appearence))
+                input#first_appearance(type=text placeholder='Issue of first appearance' name='first_appearance' value=(undefined===hero ? '' : hero.first_appearence))
             button(type='submit') Submit
         
         a(href='/heroes') &larr; Back to Heroes 
