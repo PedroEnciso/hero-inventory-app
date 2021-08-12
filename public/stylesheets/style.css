@@ -343,6 +343,20 @@
   width: 50px;
 }
 
+.add-hero-container .error-message {
+  font-size: 1.2rem;
+  color: red;
+}
+
+.add-hero-container ul {
+  list-style: none;
+}
+
+.add-hero-container ul li {
+  color: red;
+  padding: 1rem 0rem;
+}
+
 .add-hero-container a {
   display: block;
   width: -webkit-fit-content;

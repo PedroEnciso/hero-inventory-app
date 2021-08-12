@@ -78,6 +78,19 @@
       }
     }
   }
+  .error-message {
+    font-size: 1.2rem;
+    color: red;
+  }
+
+  ul {
+    list-style: none;
+    li {
+      color: red;
+      padding: 1rem 0rem;
+    }
+  }
+
   a {
     display: block;
     width: fit-content;
