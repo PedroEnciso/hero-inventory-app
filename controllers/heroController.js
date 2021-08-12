@@ -1,7 +1,8 @@
 const Hero = require("../models/hero");
 const async = require("async");
 const { body, validationResult } = require("express-validator");
-const hero_image = require("../public/images/default-hero.png");
+const hero_image =
+  "https://www.pinclipart.com/picdir/big/351-3519728_profile-clip-art.png";
 
 // display list of all heroes on home page
 exports.index = function (req, res) {
@@ -95,7 +96,7 @@ exports.hero_create_post = [
   // process request after validation/sanitization
   (req, res, next) => {
     // extract validation errors from a request
-    const errors = validationResults(req);
+    const errors = validationResult(req);
 
     // create powerstats object from request to feed to new hero
     const userStats = {
