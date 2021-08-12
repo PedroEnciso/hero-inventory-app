@@ -1,52 +1,57 @@
 extends layout
 
 block content
-    h1 #{title}
+    div.add-hero-container
+        h1 #{title}
 
-    form(method='POST' action='').hero-form
-        label(for='hero_name') Hero Name:
-        input#hero_name(type=text placeholder='Hero name' name='hero_name' required='true' value=(undefined===hero ? '' : hero.name))
+        form(method='POST' action='').hero-form
+            div.form-field
+                label(for='hero_name') Hero Name:
+                input#hero_name(type=text placeholder='Hero name' name='hero_name' required='true' value=(undefined===hero ? '' : hero.name))
 
-        label(for='hero_identity') Secret Identity:
-        input#hero_identity(type=text placeholder='Secret identity' name='hero_identity' required='true' value=(undefined===hero ? '' : hero.identity))
+            div.form-field
+                label(for='hero_identity') Secret Identity:
+                input#hero_identity(type=text placeholder='Secret identity' name='hero_identity' required='true' value=(undefined===hero ? '' : hero.identity))
 
-        // alignment here
-        label(for='alignment') Alignment:
-        select#alignment(type='select' placeholder='Select alignment' name='alignment' required='true')
-            option(value='good') Good
-            option(value='bad') Bad
-            option(value='neutral') Neutral
+            div.form-field
+                label(for='alignment') Alignment:
+                select#alignment(type='select' placeholder='Select alignment' name='alignment' required='true')
+                    option(value='good') Good
+                    option(value='bad') Bad
+                    option(value='neutral') Neutral
 
 
-        // powerstats here
-        h2 Powerstats
-        div.powerstat
-            label(for='intelligence') intelligence:
-            input#intelligence(type=number placeholder='0' name='intelligence' required='true' min='1' max='100')
+            div.form-field.powerstat-field
+                h2 Powerstats
+                div.powerstat
+                    label(for='intelligence') intelligence:
+                    input#intelligence(type=number placeholder='0' name='intelligence' required='true' min='1' max='100')
 
-        div.powerstat
-            label(for='strength') strength:
-            input#strength(type=number placeholder='0' name='strength' required='true' min='1' max='100')
-        
-        div.powerstat
-            label(for='speed') speed:
-            input#speed(type=number placeholder='0' name='speed' required='true' min='1' max='100')
+                div.powerstat
+                    label(for='strength') strength:
+                    input#strength(type=number placeholder='0' name='strength' required='true' min='1' max='100')
+                
+                div.powerstat
+                    label(for='speed') speed:
+                    input#speed(type=number placeholder='0' name='speed' required='true' min='1' max='100')
 
-        div.powerstat
-            label(for='durability') durability:
-            input#durability(type=number placeholder='0' name='durability' required='true' min='1' max='100')
+                div.powerstat
+                    label(for='durability') durability:
+                    input#durability(type=number placeholder='0' name='durability' required='true' min='1' max='100')
 
-        div.powerstat
-            label(for='power') power:
-            input#power(type=number placeholder='0' name='power' required='true' min='1' max='100')
+                div.powerstat
+                    label(for='power') power:
+                    input#power(type=number placeholder='0' name='power' required='true' min='1' max='100')
 
-        div.powerstat
-            label(for='combat') combat:
-            input#combat(type=number placeholder='0' name='combat' required='true' min='1' max='100')
+                div.powerstat
+                    label(for='combat') combat:
+                    input#combat(type=number placeholder='0' name='combat' required='true' min='1' max='100')
 
-        label(for='publisher') Publisher/ Creator:
-        input#publisher(type=text placeholder='Publisher/ creator' name='publisher' required='true' value=(undefined===hero ? '' : hero.publisher))
+            div.form-field
+                label(for='publisher') Publisher/Creator:
+                input#publisher(type=text placeholder='Publisher/creator' name='publisher' required='true' value=(undefined===hero ? '' : hero.publisher))
 
-        label(for='first_appearance') First Appearance in Comics:
-        input#first_appearance(type=text placeholder='Issue of first appearance' name='first_appearance' required='true' value=(undefined===hero ? '' : hero.first_appearence))
-        
+            div.form-field
+                label(for='first_appearance') First Appearance in Comics:
+                input#first_appearance(type=text placeholder='Issue of first appearance' name='first_appearance' required='true' value=(undefined===hero ? '' : hero.first_appearence))
+                
