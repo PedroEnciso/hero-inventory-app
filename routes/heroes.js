@@ -17,4 +17,7 @@ router.get("/:id", hero_controller.hero_detail);
 // GET hero delete page
 router.get("/:id/delete", hero_controller.hero_delete_get);
 
+// handle hero_delete POST request
+router.post("/:id/delete", hero_controller.hero_delete_post);
+
 module.exports = router;

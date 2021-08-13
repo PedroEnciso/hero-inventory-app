@@ -152,3 +152,11 @@ exports.hero_delete_get = (req, res, next) => {
     }
   );
 };
+
+exports.hero_delete_post = (req, res) => {
+  Hero.findByIdAndRemove(req.body.heroid, function deleteAuthor(err) {
+    if (err) return next(err);
+    // successful so go back to home
+    res.redirect("/heroes");
+  });
+};
