@@ -48,17 +48,11 @@ exports.add_hero = function (req, res) {
 // handle hero create on post
 exports.hero_create_post = [
   // validate and sanitize fields
-  body("hero_name")
+  body("hero_name", "New hero must have a name")
     .trim()
     .isLength({ min: 1 })
-    .escape()
-    .withMessage("New hero must have a name")
-    .isAlphanumeric()
-    .withMessage("Hero name contains non-alphanumeric characters."),
-  body("hero_identity")
-    .optional({ checkFalsy: true })
-    .isAlphanumeric()
-    .withMessage("Hero identity contains non-alphanumeric characters."),
+    .escape(),
+  body("hero_identity").optional({ checkFalsy: true }),
   body("alignment", "You must choose an alignment")
     .trim()
     .isLength({ min: 1 })
