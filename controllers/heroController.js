@@ -123,6 +123,7 @@ exports.hero_create_post = [
       // there are errors, render form again with error messages
       res.render("add_hero", {
         title: "Create a New Hero",
+        hero: hero,
         errors: errors.array(),
       });
       return;

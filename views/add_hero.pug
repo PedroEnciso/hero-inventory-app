@@ -25,27 +25,27 @@ block content
                 h2 Powerstats
                 div.powerstat
                     label(for='intelligence') intelligence:
-                    input#intelligence(type=number placeholder='0' name='intelligence' required='true' min='1' max='100')
+                    input#intelligence(type=number placeholder='0' name='intelligence' required='true' min='1' max='100' value=(undefined===hero ? '' : hero.powerstats.intelligence))
 
                 div.powerstat
                     label(for='strength') strength:
-                    input#strength(type=number placeholder='0' name='strength' required='true' min='1' max='100')
+                    input#strength(type=number placeholder='0' name='strength' required='true' min='1' max='100' value=(undefined===hero ? '' : hero.powerstats.strength))
                 
                 div.powerstat
                     label(for='speed') speed:
-                    input#speed(type=number placeholder='0' name='speed' required='true' min='1' max='100')
+                    input#speed(type=number placeholder='0' name='speed' required='true' min='1' max='100' value=(undefined===hero ? '' : hero.powerstats.speed))
 
                 div.powerstat
                     label(for='durability') durability:
-                    input#durability(type=number placeholder='0' name='durability' required='true' min='1' max='100')
+                    input#durability(type=number placeholder='0' name='durability' required='true' min='1' max='100' value=(undefined===hero ? '' : hero.powerstats.durability))
 
                 div.powerstat
                     label(for='power') power:
-                    input#power(type=number placeholder='0' name='power' required='true' min='1' max='100')
+                    input#power(type=number placeholder='0' name='power' required='true' min='1' max='100' value=(undefined===hero ? '' : hero.powerstats.power))
 
                 div.powerstat
                     label(for='combat') combat:
-                    input#combat(type=number placeholder='0' name='combat' required='true' min='1' max='100')
+                    input#combat(type=number placeholder='0' name='combat' required='true' min='1' max='100' value=(undefined===hero ? '' : hero.powerstats.combat))
 
             div.form-field
                 label(for='publisher') Publisher/Creator:
