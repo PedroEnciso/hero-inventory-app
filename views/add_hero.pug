@@ -5,6 +5,13 @@ block content
         h1 #{title}
 
         form(method='POST' action='').hero-form
+            // display any errors made on submission
+            if errors
+                h2.error-message Sorry, your request was denied:
+                ul
+                    for error in errors
+                        li!= error.msg
+
             div.form-field
                 label(for='hero_name') Hero Name:
                 input#hero_name(type=text placeholder='Hero name' name='hero_name' required='true' value=(undefined===hero ? '' : hero.name))
@@ -55,11 +62,6 @@ block content
                 label(for='first_appearance') First Appearance in Comics:
                 input#first_appearance(type=text placeholder='Issue of first appearance' name='first_appearance' value=(undefined===hero ? '' : hero.first_appearence))
             button(type='submit') Submit
-        
-        if errors
-            h2.error-message Sorry, your request was denied:
-            ul
-                for error in errors
-                    li!= error.msg
+    
         
         a(href='/heroes') &larr; Back to Heroes 

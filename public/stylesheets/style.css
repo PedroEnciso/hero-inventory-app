@@ -346,15 +346,29 @@
 .add-hero-container .error-message {
   font-size: 1.2rem;
   color: red;
+  text-align: center;
 }
 
 .add-hero-container ul {
   list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .add-hero-container ul li {
   color: red;
   padding: 1rem 0rem;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 .add-hero-container a {

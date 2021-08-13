@@ -81,13 +81,21 @@
   .error-message {
     font-size: 1.2rem;
     color: red;
+    text-align: center;
   }
 
   ul {
     list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     li {
       color: red;
       padding: 1rem 0rem;
+      text-align: center;
+      font-size: 1.1rem;
     }
   }
 
