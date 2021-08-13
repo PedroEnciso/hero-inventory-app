@@ -132,6 +132,23 @@ exports.hero_create_post = [
   },
 ];
 
-exports.hero_delete_get = (req, res) => {
-  res.render("delete_hero", { title: "Delete Page" });
+exports.hero_delete_get = (req, res, next) => {
+  async.parallel(
+    {
+      hero: function (callback) {
+        Hero.findById(req.params.id).exec(callback);
+      },
+    },
+    (err, results) => {
+      if (err) return next(err);
+      if (results == null) {
+        // no results
+        var err = new Error("Hero not found");
+        err.status = 404;
+        return next(err);
+      }
+      // successful, so render
+      res.render("delete_hero", { hero: results.hero });
+    }
+  );
 };

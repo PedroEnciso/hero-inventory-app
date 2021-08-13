@@ -1,4 +1,14 @@
 extends layout
 
 block content
-    h1 #{title}
+    div.delete-hero-container
+        .image-container
+            img(src=hero.image)
+        h1 Are you sure you want to delete #{hero.name}?
+        .options
+            a.no(href=hero.url) No
+            .yes
+                form(method='POST' action='')
+                    input#heroid(type='hidden' name='heroid' required='true' value=hero._id)
+                    button(type='submit') Yes
+    
