@@ -14,4 +14,7 @@ router.post("/add_hero", hero_controller.hero_create_post);
 // GET hero detail page
 router.get("/:id", hero_controller.hero_detail);
 
+// GET hero delete page
+router.get("/:id/delete", hero_controller.hero_delete_get);
+
 module.exports = router;

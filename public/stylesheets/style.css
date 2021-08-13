@@ -221,12 +221,20 @@
       grid-template-columns: 1fr 1fr;
 }
 
-.hero-detail-container a {
+.hero-detail-container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 35px;
+}
+
+.hero-detail-container .buttons a {
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 35px auto 0px;
   font-weight: 600;
   font-size: 1.1rem;
   color: white;
@@ -237,8 +245,16 @@
   transition: background-color 0.4s;
 }
 
-.hero-detail-container a:hover {
+.hero-detail-container .buttons a:hover {
   background-color: #2c2c34;
+}
+
+.hero-detail-container .buttons .delete-button {
+  color: red;
+}
+
+.hero-detail-container .buttons .delete-button:hover {
+  background-color: #311010;
 }
 
 .add-hero-container {

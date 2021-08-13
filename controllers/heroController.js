@@ -131,3 +131,7 @@ exports.hero_create_post = [
     }
   },
 ];
+
+exports.hero_delete_get = (req, res) => {
+  res.render("delete_hero", { title: "Delete Page" });
+};
