@@ -1,17 +1,21 @@
 .hero-detail-container {
-  width: 80%;
+  // changed: width
+  width: 90%;
   margin: 0 auto;
   max-width: 1200px;
   color: white;
   padding-top: 75px;
 
   .hero-detail-grid {
+    // change: g-t-c
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 
     .image-container {
-      width: 70%;
+      //changed: width to 70%, margin to 0
+      width: 50%;
       place-self: center;
+      margin-bottom: 1.5rem;
 
       img {
         width: 100%;
@@ -116,6 +120,21 @@
       color: red;
       &:hover {
         background-color: #311010;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .hero-detail-container {
+    width: 80%;
+
+    .hero-detail-grid {
+      grid-template-columns: 1fr 1fr;
+
+      .image-container {
+        width: 70%;
+        margin-bottom: 0rem;
       }
     }
   }

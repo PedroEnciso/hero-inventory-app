@@ -92,7 +92,23 @@ $box-shadow-hover: rgba(0, 0, 0, 0.3) 0px 19px 38px,
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 700px) {
+  .container {
+    .hero-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    .hero-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) {
   .container {
     .hero-grid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
